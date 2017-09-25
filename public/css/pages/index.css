@@ -57,7 +57,7 @@ Colors:
 }
 
 div, p, li, span, a{
-  font-size: 18px;
+  font-size: 16px;
 } h1, h1 span {
   font-size: 72px;
 }
@@ -79,7 +79,7 @@ body, html {
   max-width: 100%;
   line-height: 1.4em;
   background-color: #121314;
-  font-family: 'Circular Std', 'Avenir', 'Arial', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Montserrat', 'Avenir', 'Arial', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
 /* MAIN LAYOUT */
@@ -131,12 +131,21 @@ div>a {
   padding-right: 45px;
   padding-top: 31px;
 }
+.nav .globe-logo {
+  position: absolute;
+  left: 45px;
+  top: 20px;
+}
+.globe-logo img {
+  max-width: 90px;
+  margin-top: -10px;
+}
 .nav ul {
   list-style: none;
 }
 .nav ul li {
   display: inline-block;
-  margin-left: 45px;
+  margin-left: 30px;
 }
 .nav ul li.solid.round {
   padding: 12px 36px;
@@ -256,7 +265,7 @@ div>a {
     font-size: 60px;
   }
   div, p, li, span, a {
-    font-size: 16px;
+    font-size: 15px;
   }
   .content {
     padding-top: 25px;
@@ -274,6 +283,9 @@ div>a {
   .content h1 .reg {
     bottom: 36px;
   }
+  .globe-logo img {
+    max-width: 80px;
+  }
   .copyright .small {
     font-size: 8px;
   }
@@ -282,8 +294,14 @@ div>a {
   .content {
     padding-top: 45px;
   }
+  .nav .globe-logo {
+    left: 30px;
+  }
 }
 @media (max-width: 767px) {
+  div, p, li, span, a {
+    font-size: 16px;
+  }
   #wrapper {
     height: auto;
   }
@@ -291,6 +309,12 @@ div>a {
     display: none;
   } .right.half {
     width: 100%;
+  }
+  .nav .globe-logo {
+    left: 15px;
+  }
+  .globe-logo img {
+    max-width: 90px;
   }
   .nav,
   .copyright {
@@ -304,15 +328,27 @@ div>a {
     padding-bottom: 120px;
   }
 }
+@media (max-width: 540px) {
+  div, p, li, span, a {
+    font-size: 14px;
+  }
+}
 @media (max-width: 400px) {
   .content .buttons>div {
     margin-right: 20px;
+  }
+  .globe-logo img {
+    max-width: 70px;
+    margin-top: -5px;
   }
   .nav ul li {
     margin-left: 10px;
   }
 }
 @media (max-width: 360px) {
+  .globe-logo img {
+    max-width: 50px;
+  }
   .nav ul li.solid.round,
   .content .donate {
     padding: 10px 20px;

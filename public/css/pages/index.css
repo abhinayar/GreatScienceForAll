@@ -78,7 +78,7 @@ body, html {
   min-height: 100vh;
   max-width: 100%;
   line-height: 1.4em;
-  background-color: #121314;
+  background-color: #fff;
   font-family: 'Montserrat', 'Avenir', 'Arial', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -192,7 +192,7 @@ div>a {
   margin-bottom: 15px;
 }
 .content .buttons {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 5px;
   font-weight: bold;
 }

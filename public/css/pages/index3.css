@@ -1,0 +1,365 @@
+/*
+Great Science For All Website
+Built for Little Scientists by Abhi Nayar | Pre-Alpha Ventures
+Copyright 2017, No part of this code may be copied without permission for profit.
+
+Fonts In Use:
+  Circular Std. Bold
+  Circular Std. Book Medium
+
+Colors:
+  Blue : #000489
+  Yellow : #ffbd00
+  White : #fff
+  Off White: #fafafa
+  Dark : #333
+*/
+
+/* Generic Template Styles */
+.bold {
+  font-weight: 700;
+} .light {
+  font-weight: 300;
+} .italic {
+  font-style: italic;
+} .main {
+  font-weight: bold;
+} .sub {
+  font-weight: normal;
+} .block {
+  display: block;
+} .inline-block {
+  display: inline-block;
+} .inline {
+  display: inline;
+} .prim {
+  color: #000489;
+} .sec {
+  color: #ffbd00;
+}
+
+.bg-center {
+  background-position: center center;
+} .bg-left {
+  background-position: left center;
+} .bg-right {
+  background-position: right center;
+} .bg-fixed {
+  background-attachment: fixed;
+} .bg-scroll {
+  background-attachment: scroll;
+} .bg-cover {
+  background-size: cover;
+} .bg-contain {
+  background-size: contain;
+} .bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+div, p, li, span, a{
+  font-size: 16px;
+} h1, h1 span {
+  font-size: 72px;
+}
+
+/* Code your site for min-width: 0px first */
+* {
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body, html {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  line-height: 1.4em;
+  background-color: #fff;
+  font-family: 'Montserrat', 'Avenir', 'Arial', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* MAIN LAYOUT */
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.half {
+  height: 100%;
+  float: left;
+}
+.left.half {
+  width: 40%;
+  background-color: #121314;
+  background-image: url(../../img/bg/GSFABanner.png);
+  background-position: center center;
+  background-size: cover;
+}
+.right.half {
+  width: 60%;
+  background-color: #fff;
+  background-image: url(../../img/bg/patternBG.jpg);
+  background-position: center center;
+  background-size: auto;
+  background-repeat: repeat;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+/* CONTENT */
+#GSFAText {
+  padding: 6%;
+  position: relative;
+}
+div>a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  padding-right: 45px;
+  padding-top: 31px;
+}
+.nav .globe-logo {
+  position: absolute;
+  left: 45px;
+  top: 20px;
+}
+.globe-logo img {
+  max-width: 90px;
+  margin-top: -10px;
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.nav ul li.solid.round {
+  padding: 12px 36px;
+  background-color: #ffbd00;
+  border-radius: 256px;
+}
+.nav ul li a {
+  color: #777;
+  text-decoration: none;
+}
+.nav ul li.solid.round a {
+  color: #fff;
+}
+.nav ul li:not(.solid) a:hover {
+  border-bottom: 2px solid #777;
+}
+.nav ul li.solid:hover {
+  background-color: #f6b600;
+}
+.content {
+  padding-top: 35px;
+}
+.content h1 {
+  font-weight: bold;
+}
+.content h1 .sec {
+  position: relative;
+}
+.content h1 .reg {
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  bottom: 55px;
+  right: -20px;
+}
+.content .subtext {
+  display: block;
+  color: #777;
+  margin-top: 25px;
+  margin-left: 5px;
+  line-height: 1.8em;
+}
+.content .subtext p {
+  margin-bottom: 15px;
+}
+.content .buttons {
+  margin-top: 30px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.content .buttons>div {
+  margin-right: 30px;
+}
+.content .buttons a {
+  text-decoration: none;
+}
+.content .donate {
+  padding: 15px 35px;
+  background-color: #ffbd00;
+  border-radius: 256px;
+}
+.content .donate:hover {
+  background-color: #f6b600;
+}
+.content .donate a {
+  color: #fff;
+}
+.content .contact a {
+  color: #000489;
+  border-bottom: 2px solid #000489;
+}
+.copyright {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  padding-right: 45px;
+  width: 100%;
+  text-align: right;
+  line-height: 1.8em;
+}
+.copyright a {
+  color: #777;
+  text-decoration: none;
+}
+.copyright span {
+  display: block;
+}
+.copyright .large {
+  color: #777;
+}
+.copyright .small {
+  font-size: 12px;
+  color: #aaa;
+}
+.copyright .author,
+.copyright .author a {
+  font-size: 8px;
+  color: #eee;
+  margin-top: -8px;
+}
+.copyright .author a {
+  color: #ddd;
+}
+
+/* Now add mobile-first CSS */
+@media (max-width: 1440px) {
+  div, p, li, span, a {
+    font-size: 16px;
+  }
+  .content {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  h1, h1 span {
+    font-size: 60px;
+  }
+  div, p, li, span, a {
+    font-size: 15px;
+  }
+  .content {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 1100px) {
+  div, p, li, span, a {
+    font-size: 14px;
+  } h1, h1 span {
+    font-size: 52px;
+  }
+  .content {
+    padding-top: 60px;
+  }
+  .content h1 .reg {
+    bottom: 36px;
+  }
+  .globe-logo img {
+    max-width: 80px;
+  }
+  .copyright .small {
+    font-size: 8px;
+  }
+}
+@media (max-width: 868px) {
+  .content {
+    padding-top: 45px;
+  }
+  .nav .globe-logo {
+    left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  div, p, li, span, a {
+    font-size: 16px;
+  }
+  #wrapper {
+    height: auto;
+  }
+  .left.half {
+    display: none;
+  } .right.half {
+    width: 100%;
+  }
+  .nav .globe-logo {
+    left: 15px;
+  }
+  .globe-logo img {
+    max-width: 90px;
+  }
+  .nav,
+  .copyright {
+    padding-right: 30px;
+  }
+  .nav ul li {
+    margin-left: 20px;
+  }
+  .content {
+    padding-top: 75px;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 540px) {
+  div, p, li, span, a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .content .buttons>div {
+    margin-right: 20px;
+  }
+  .globe-logo img {
+    max-width: 70px;
+    margin-top: -5px;
+  }
+  .nav ul li {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .globe-logo img {
+    max-width: 50px;
+  }
+  .nav ul li.solid.round,
+  .content .donate {
+    padding: 10px 20px;
+  }
+  .content {
+    padding-top: 60px;
+  }
+  .content .buttons>div {
+    margin-right: 10px;
+  }
+  .copyright .small {
+    font-size: 6px;
+  }
+}

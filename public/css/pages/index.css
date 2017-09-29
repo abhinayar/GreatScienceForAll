@@ -73,6 +73,11 @@ div, p, li, span, a{
 } a, a:hover, a:visited {
   color: currentColor;
   text-decoration: none;
+} input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+ outline: none;
 }
 
 .hover-scale {
@@ -163,8 +168,8 @@ nav {
 #top .bg-wrapper {
   width: 100%;
   height: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 210px;
+  padding-bottom: 210px;
   background-position: center 53%;
   background-image: url('../../img/bg/GSFABanner.png');
 }
@@ -236,8 +241,8 @@ nav {
 
 @media (min-width: 540px) {
   #top .bg-wrapper {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 280px;
+    padding-bottom: 280px;
     background-position: center 54%;
   }
   .bg-wrapper .overlay {
@@ -292,6 +297,8 @@ nav {
     height: 45px;
   }
   #top .bg-wrapper {
+    padding-top: 320px;
+    padding-bottom: 320px;
     background-position: center 56%;
   }
   #bottom .content-wrapper {
@@ -319,7 +326,7 @@ nav {
 }
 @media (min-width: 992px) {
   #top .bg-wrapper {
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding-top: 360px;
+    padding-bottom: 360px;
   }
 }

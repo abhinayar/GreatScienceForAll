@@ -36,8 +36,6 @@ Colors:
   color: #000489;
 } .sec {
   color: #ffbd00;
-} .white {
-  color: #fff;
 }
 
 .bg-center {
@@ -100,6 +98,7 @@ button:focus {
 
 html {
   display: block;
+  overflow: hidden;
   height: 100%;
 }
 body {
@@ -107,6 +106,7 @@ body {
   width: 100%;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   font-family: 'Montserrat', 'Avenir', 'Arial', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   background-color: #fff;
   background-repeat: repeat;
@@ -115,6 +115,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
   overflow-x: hidden;
   color: #777;
 }
@@ -164,24 +165,17 @@ nav {
   top: -3px;
 }
 
-#top {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  z-index: 1;
-}
 #top .bg-wrapper {
   width: 100%;
   height: 100%;
-  min-height: 100%;
-  min-height: 100vh;
-  background-position: center center;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  background-position: center 53%;
   background-image: url('../../img/bg/GSFABanner.png');
 }
 .bg-wrapper .overlay {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -190,34 +184,14 @@ nav {
   z-index: 9;
 }
 
-#bottom {
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  padding-top: 80px;
-  padding-bottom: 40px;
-  z-index: 2;
-}
-
 #bottom .content {
   padding: 20px;
-  padding-bottom: 60px;
+  padding-top: 40px;
   color: #777;
   font-size: 14px;
 }
-.content h1 {
-  margin-bottom: 15px;
-} .content h1 span {
-  font-size: 54px;
-  font-weight: bold;
-  display: block;
-}
-.content .text-wrapper {
-  background-color: #fff;
-  padding: 20px;
-}
 .content p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6em;
   margin-bottom: 20px;
   font-weight: 400;
@@ -253,17 +227,16 @@ nav {
 .footer-item>a {
   font-size: 12px;
   display: inline-block;
-  color: #fff;
+  color: #777;
 }
 .footer-sub,
 .designer>a {
   font-size: 10px;
-  color: #ccc;
+  color: #aaa;
 }
 .designer>a {
   font-size: 8px;
-  color: #aaa;
-  opacity: 0.3;
+  color: #eee;
 }
 
 @media (min-width: 540px) {
@@ -272,18 +245,8 @@ nav {
     padding-bottom: 280px;
     background-position: center 54%;
   }
-  #bottom {
-    padding-top: 120px;
-    padding-bottom: 0;
-    z-index: 2;
-  }
   .bg-wrapper .overlay {
     background-image: linear-gradient(rgba(0,0,0,0.3), transparent);
-  }
-  .content h1 span {
-    font-size: 60px;
-    font-weight: bold;
-    display: block;
   }
   .content p {
     font-size: 14px;
@@ -300,14 +263,10 @@ nav {
     top: 33px;
     margin-left: 20px;
     background-color: transparent;
-    color: #fff;
+    color: #000489;
     border-bottom: 2px solid currentColor;
     border-radius: 0;
     padding: 0;
-    transition: color 0.12s ease;
-  }
-  .button.contact>a:hover {
-    color: #febd00;
   }
   .footer {
     margin-top: 100px;
@@ -338,6 +297,8 @@ nav {
     height: 45px;
   }
   #top .bg-wrapper {
+    padding-top: 320px;
+    padding-bottom: 320px;
     background-position: center 56%;
   }
   #bottom .content-wrapper {

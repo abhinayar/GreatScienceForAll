@@ -55,40 +55,81 @@
   </head>
   <body>
     <div id="wrapper">
-      <div class="top-wrapper">
-        <div class="top-donate">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="U45P6PC8UZ7X8">
-            <input type="image" src="./public/img/icons/donate_button.png" border="0" name="submit" alt="Donate to Great Science For All." class="hover-scale">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-          <a class="donate-overlay hover-scale">Donate</a>
+      <div id="top" class="relative">
+        <div class="nav-wrapper container relative">
+          <nav class="absolute">
+            <ul>
+              <li class="nav-item">
+                <a href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="mailto:">Contact</a>
+              </li>
+              <li class="nav-item button donate">
+                <a class="donate-overlay hover-scale">Donate</a>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="U45P6PC8UZ7X8">
+                  <input type="image" src="./public/img/icons/donate_button.png" border="0" name="submit" alt="Donate to Great Science For All.">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="top-bg"></div>
+        <div class="bg-wrapper bg-cover bg-center bg-no-repeat">
+          <div class="overlay">
+            <!-- Insert Globe BG Image here -->
+          </div>
+        </div>
       </div>
-      <div class="bottom-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 relative">
-              <div class="content">
-                <p>
-                  The goal of Great Science For All&reg; is to provide science educational opportunities for children in grades Pre-K through 5th grade that would otherwise be unable to afford such programs.
-                  The mission of this non-profit is to eliminate the achievement gap and provide more career opportunities for these children in the STEIM fields.
-                </p>
+      <div id="bottom" class="bg-center">
+        <div class="content-wrapper container relative">
+          <div class="content">
+            <div class="title-wrapper">
+              <h1>
+                <span class="prim">Great Science</span>
+                <span class="sec">For All</span>
+              </h1>
+            </div>
+            <div class="text-wrapper">
+              <p>
+                The goal of Great Science For All&reg; is to provide science educational opportunities for children in grades Pre-K through 5th grade that would otherwise be unable to afford such programs.
+              </p>
+              <p>
+                The mission of this non-profit is to eliminate the achievement gap and provide more career opportunities for these children in the STEAM fields.
+              </p>
+            </div>
+            <div class="button-wrapper relative">
+              <div class="button donate">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="U45P6PC8UZ7X8">
+                  <input type="image" src="./public/img/icons/donate_button.png" border="0" name="submit" alt="Donate to Great Science For All" class="hover-scale">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
               </div>
-              <div class="footer">
+              <br class="hidden-sm hidden-md hidden-lg" />
+              <div class="button contact">
+                <a href="mailto:drheidi@gsfa.org">Contact Us</a>
+              </div>
+            </div>
+            <div class="footer relative">
+              <div class="footer-wrapper">
                 <div class="footer-main">
                   <div class="email footer-item">
-                    <a href="mailto:drheidi@gsfa.org">drheidi@gsfa.org</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="tel:2037111113">203-711-1113</a>
+                    <a href="mailto:drheidi@gsfa.org">drheidi@gsfa.org</a>
                   </div>
-                  <div class="copy footer-item">
-                    <p>
-                      Copyright &copy; 2017, Great Science For All
-                      <br />
-                      Registered Non-Profit, 501(c)(3) certified.
-                    </p>
+                  <span class="hidden-xs footer-bar">&nbsp;|&nbsp;</span>
+                  <div class="tel footer-item">
+                    <a href="tel:2037111113">203-711-1113</a>
                   </div>
+                </div>
+                <div class="footer-sub">
+                  Copyright &copy; 2017, Great Science For All | Registered Non-Profit, 501(c)(3) certified.
+                </div>
+                <div class="designer">
+                  <a href="https://linkedin.com/in/abhinayar">Designed by Abhi Nayar</a>
                 </div>
               </div>
             </div>

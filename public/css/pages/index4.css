@@ -1,0 +1,371 @@
+/*
+Great Science For All Website
+Built for Little Scientists by Abhi Nayar | Pre-Alpha Ventures
+Copyright 2017, No part of this code may be copied without permission for profit.
+
+Fonts In Use:
+  Circular Std. Bold
+  Circular Std. Book Medium
+
+Colors:
+  Blue : #000489
+  Yellow : #ffbd00
+  White : #fff
+  Off White: #fafafa
+  Dark : #333
+*/
+
+/* Generic Template Styles */
+.bold {
+  font-weight: 700;
+} .light {
+  font-weight: 300;
+} .italic {
+  font-style: italic;
+} .main {
+  font-weight: bold;
+} .sub {
+  font-weight: normal;
+} .block {
+  display: block;
+} .inline-block {
+  display: inline-block;
+} .inline {
+  display: inline;
+} .prim {
+  color: #000489;
+} .sec {
+  color: #ffbd00;
+} .white {
+  color: #fff;
+}
+
+.bg-center {
+  background-position: center center;
+} .bg-left {
+  background-position: left center;
+} .bg-right {
+  background-position: right center;
+} .bg-fixed {
+  background-attachment: fixed;
+} .bg-scroll {
+  background-attachment: scroll;
+} .bg-cover {
+  background-size: cover;
+} .bg-contain {
+  background-size: contain;
+} .bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.relative {
+  position: relative;
+} .absolute {
+  position: absolute;
+} .fixed {
+  position: fixed;
+}
+
+div, p, li, span, a{
+  font-size: 16px;
+} h1, h1 span {
+  font-size: 72px;
+} ul, ol {
+  list-style: none;
+} a, a:hover, a:visited {
+  color: currentColor;
+  text-decoration: none;
+} input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+ outline: none;
+}
+
+.hover-scale {
+  cursor: pointer;
+  transition: transform 0.12s ease;
+} .hover-scale:hover {
+  transform: scale(1.1);
+}
+
+/* Code your site for min-width: 0px first */
+* {
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  display: block;
+  height: 100%;
+}
+body {
+  display: block;
+  width: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', 'Avenir', 'Arial', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  background-repeat: repeat;
+  background-size: auto;
+  background-image: url('../../img/bg/patternBG.jpg');
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: #777;
+}
+
+/* MAIN LAYOUT */
+nav {
+  z-index: 999;
+  width: 100%;
+  top: 30px;
+  left: 0;
+  padding: 0 15px;
+  text-align: center;
+}
+.nav-item {
+  display: inline-block;
+  position: relative;
+}
+.nav-item>a,
+.nav-item>a:hover {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: color 0.12s;
+}
+.nav-item>a:hover {
+  color: #ffbd00;
+}
+.nav-item>a.donate-overlay {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #ffbd00;
+  font-weight: bold;
+}
+.nav-item form {
+  display: inline-block;
+}
+.nav-item input {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  height: 40px;
+  position: absolute;
+  right: 2px;
+  top: -3px;
+}
+
+#top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+#top .bg-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  background-position: center center;
+  background-image: url('../../img/bg/GSFABanner.png');
+}
+.bg-wrapper .overlay {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: rgba(0,0,0,0.25);
+  background-image: linear-gradient(rgba(0,0,0,0.4), transparent);
+  z-index: 9;
+}
+
+#bottom {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  z-index: 2;
+}
+
+#bottom .content {
+  padding: 20px;
+  padding-bottom: 60px;
+  color: #777;
+  font-size: 14px;
+}
+.content h1 {
+  margin-bottom: 15px;
+} .content h1 span {
+  font-size: 54px;
+  font-weight: bold;
+  display: block;
+}
+.content .text-wrapper {
+  background-color: #fff;
+  padding: 20px;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.button-wrapper {
+  margin-top: 30px;
+}
+.button-wrapper input {
+  max-width: 135px;
+}
+.button-wrapper .button>a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 25px;
+  background-color: #000489;
+  border-radius: 50px;
+  margin-top: -20px;
+}
+
+.footer {
+  margin-top: 120px;
+}
+.footer-wrapper {
+  position: absolute;
+  text-align: right;
+  max-width: 75%;
+  right: 0;
+  bottom: 0;
+}
+.footer-item,
+.footer-item>a {
+  font-size: 12px;
+  display: inline-block;
+  color: #fff;
+}
+.footer-sub,
+.designer>a {
+  font-size: 10px;
+  color: #ccc;
+}
+.designer>a {
+  font-size: 8px;
+  color: #aaa;
+  opacity: 0.3;
+}
+
+@media (min-width: 540px) {
+  #top .bg-wrapper {
+    padding-top: 280px;
+    padding-bottom: 280px;
+    background-position: center 54%;
+  }
+  #bottom {
+    padding-top: 120px;
+    padding-bottom: 0;
+    z-index: 2;
+  }
+  .bg-wrapper .overlay {
+    background-image: linear-gradient(rgba(0,0,0,0.3), transparent);
+  }
+  .content h1 span {
+    font-size: 60px;
+    font-weight: bold;
+    display: block;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  br.hidden-sm {
+    display: none;
+  }
+  .button-wrapper .button {
+    display: inline-block;
+    margin-top: 0;
+  }
+  .button.contact>a {
+    position: absolute;
+    top: 33px;
+    margin-left: 20px;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 2px solid currentColor;
+    border-radius: 0;
+    padding: 0;
+    transition: color 0.12s ease;
+  }
+  .button.contact>a:hover {
+    color: #febd00;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer-item,
+  .footer-item>a {
+    font-size: 14px;
+  }
+  .footer-bar {
+    display: inline-block !important;
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-item>a,
+  .nav-item>a:hover {
+    font-size: 16px;
+    padding: 14px 48px;
+  }
+  .nav-item>a.donate-overlay {
+    margin-left: 36px;
+    padding: 12px 32px;
+  }
+  .nav-item input {
+    max-width: 160px;
+    top: 2px;
+    background-color: red;
+    height: 45px;
+  }
+  #top .bg-wrapper {
+    background-position: center 56%;
+  }
+  #bottom .content-wrapper {
+    max-width: 768px;
+  }
+  #bottom .content {
+    padding-top: 50px;
+  }
+  .content p,
+  .button-wrapper .button>a,
+  .footer-item,
+  .footer-item>a {
+    font-size: 16px;
+  }
+  .button-wrapper .button>a {
+    margin-left: 30px
+  }
+  .footer-bar {
+    font-size: 12px;
+  }
+  .footer-sub,
+  .designer>a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #top .bg-wrapper {
+    padding-top: 360px;
+    padding-bottom: 360px;
+  }
+}

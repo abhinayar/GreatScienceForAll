@@ -1,0 +1,114 @@
+body {
+  font-family: 'Montserrat';
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.prim-bg {
+  background-color: #000489 !important;
+  color: #fff !important;
+}
+
+@media (min-width: 0px) {
+  h1,
+  .fdb-block h1,
+  .fdb-block .text-h1 {
+    font-weight: bold !important;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(254, 189, 0);
+    font-size: 32px;
+  } h3, p {
+    font-weight: 400 !important;
+  } p {
+    font-size: 16px !important;
+  }
+
+  #header {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff !important;
+  } #header h1 {
+    border-bottom: none !important;
+    font-weight: bold;
+    color: #000489;
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  .fdb-block {
+    line-height: 1.8;
+    font-weight: 300;
+    padding: 45px 0;
+  }
+  #button2 {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  #theGoal .container {
+    max-width: 750px;
+  }
+  #header .btn {
+    background-color: #febd00;
+    border-radius: 7px;
+    border-color: #febd00;
+    margin-right: 20px;
+  } #header .btn-link {
+    color: #000489;
+    border-bottom: 2px solid #febd00;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+  } .board-member {
+    max-width: 60%;
+  } .board-member-col {
+    margin-bottom: 30px;
+  } .board-member-col p {
+    line-height: 1.4em;
+  } .board-member-col h2 {
+    margin-top: 15px !important;
+    font-size: 24px !important;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  } #fundingOps .funding-op-title {
+    line-height: 1.4em;
+  } #fundingOps .funding-op-col {
+    margin-bottom: 30px;
+  } #FAQ .faq-item {
+    margin-bottom: 30px;
+  } .footer-final {
+    font-size: 10px !important;
+  }
+} @media (min-width: 340px) {
+  #button2 {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+} @media (min-width: 768px) {
+  #header {
+    height: 90vh;
+  }
+  #header h1 {
+    font-size: 72px;
+  }
+  .fdb-block {
+    padding: 60px 0;
+  } #header .btn {
+    padding: 14px 32px !important;
+  } #header .btn,
+  #header .btn-link {
+    color: #fff;
+    font-size: 24px !important;
+  }
+}

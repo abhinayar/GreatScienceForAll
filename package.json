@@ -1,0 +1,17 @@
+{
+  "name": "gsfa",
+  "version": "1.0.0",
+  "description": "GSFA Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhi Nayar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4"
+  }
+}

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat';
+  font-family: 'Josefin Sans', Montserrat, Rubik, Roboto, Arial, sans-serif;
   line-height: 1.4em;
   font-size: 16px;
 }
@@ -21,7 +21,7 @@ body {
     display: inline-block;
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(254, 189, 0);
-    font-size: 32px;
+    font-size: 52px;
   } h3, p {
     font-weight: 400 !important;
   } p {
@@ -41,7 +41,7 @@ body {
     border-bottom: none !important;
     font-weight: bold;
     color: #000489;
-    font-size: 32px;
+    font-size: 52px;
     margin-top: 30px;
   }
   .fdb-block {
@@ -54,16 +54,27 @@ body {
     margin-left: 0;
     margin-top: 15px;
   }
+
   #theGoal .container {
-    max-width: 750px;
+    max-width: 640px;
   }
+  #aboutUs .container,
+  #BoD .container,
+  #fundingOps .container,
+  #FAQ .container {
+    max-width: 920px;
+  }
+
   #header .btn {
     background-color: #febd00;
-    border-radius: 7px;
+    border-radius: 5px;
     border-color: #febd00;
+    font-size: 21px;
     margin-right: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.15);
   } #header .btn-link {
     color: #000489;
+    font-size: 21px;
     border-bottom: 2px solid #febd00;
     display: inline-block;
     font-weight: bold;
@@ -89,6 +100,18 @@ body {
   } .footer-final {
     font-size: 10px !important;
   }
+  .fdb-block h3 {
+    line-height: 1.4em;
+  }
+
+
+  #fundingOps .funding-op-title {
+    color: #000489;
+  }
+  #BoD h2,
+  #FAQ h3 {
+    color: #febd00;
+  }
 } @media (min-width: 340px) {
   #button2 {
     display: inline-block;
@@ -100,7 +123,8 @@ body {
     height: 90vh;
   }
   #header h1 {
-    font-size: 72px;
+    font-size: 100px;
+    margin-bottom: 15px;
   }
   .fdb-block {
     padding: 60px 0;
@@ -108,7 +132,11 @@ body {
     padding: 14px 32px !important;
   } #header .btn,
   #header .btn-link {
-    color: #fff;
     font-size: 24px !important;
+  }
+
+  #BoD img {
+    max-width: 180px;
+    margin: 0 auto;
   }
 }

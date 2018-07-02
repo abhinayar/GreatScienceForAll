@@ -79,6 +79,10 @@ body {
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
+  } #donateImage {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.21);
   } .board-member {
     max-width: 60%;
   } .board-member-col {
